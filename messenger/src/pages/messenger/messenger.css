@@ -1,10 +1,13 @@
 .messenger {
     height: calc(100vh - 70px);
     display: flex;
+    width: 100%;
+    /* border: 1px solid #ccc; */
   }
   
   .chatMenu {
     flex: 3.5;
+    border-right: 1px solid #ccc;
   }
   
   .chatMenuInput {
