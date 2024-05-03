@@ -8,7 +8,7 @@ interface IInitialState {
   dispatch? : React.Dispatch<A>
 }
 const INITIAL_STATE: IInitialState = {
-  user: JSON.parse(localStorage.getItem("user")) || null,
+  user: JSON.parse(localStorage.getItem("user") as A) ,
   isFetching: false,
   error: false,
 };

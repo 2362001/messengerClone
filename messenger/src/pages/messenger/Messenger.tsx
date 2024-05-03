@@ -4,6 +4,7 @@ import Conversation from "../../components/conversations/Conversations";
 import { AuthContext } from "../../context/authContext";
 import "./messenger.css";
 import Topbar from "../../components/topbar/Topbar";
+import ChatOnline from "../../components/chatOnlines/ChatOnline";
 
 const Messenger = () => {
   const [conversations, setConversations] = useState([]);
@@ -72,6 +73,8 @@ const Messenger = () => {
     // }
     setNewMessage("");
   };
+  console.log(currentChat);
+  console.log(conversations);
 
   return (
     <>
@@ -121,10 +124,10 @@ const Messenger = () => {
         <div className="chatOnline">
           <div className="chatOnlineWrapper">
             {/* <ChatOnline
-              onlineUsers={onlineUsers}
+              onlineUsers={[]}
               currentId={user._id}
               setCurrentChat={setCurrentChat}
-            /> */}
+            /> */}Heelo world
           </div>
         </div>
       </div>
